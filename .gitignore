@@ -1,0 +1,4 @@
+local.settings*
+build/
+dist/
+sosi_configuration_manager.egg-info/
