@@ -1,1 +1,0 @@
-name = "sosi_configuration_reader"

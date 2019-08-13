@@ -1,6 +1,6 @@
-import base_classes.base_config_manager
+from base_classes import base_config_manager
 
-class reader(base_classes.base_config_manager.base_config_manager):
+class reader(base_config_manager.base_config_manager):
     # Class initializer
     def __init__(self, path, jsonPathToRead):
         super().__init__(path, jsonPathToRead)
