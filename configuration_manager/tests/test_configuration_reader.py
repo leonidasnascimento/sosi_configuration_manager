@@ -1,4 +1,4 @@
-from configuration_reader import reader
+from reader import reader
 import unittest
 
 class test_configuration_reader(unittest.TestCase):
@@ -7,6 +7,6 @@ class test_configuration_reader(unittest.TestCase):
         val = configReader.getValue("WEBSITE_SITE_NAME", None)
         self.assertEqual(str(val).lower(), "sosi-ms001-stockmktlisting")
         pass
-    
+
 if __name__ == "__main__":
     unittest.main()

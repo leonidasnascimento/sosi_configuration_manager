@@ -7,7 +7,7 @@ class reader(base_config_manager.base_config_manager):
         pass
     
     # Gets the value from a given key
-    def getValue(self, key, defaultValue = None):
+    def getValue(self, key, defaultValue=None):
         value = self.configuration.getValue(key)
         
         if value is None:

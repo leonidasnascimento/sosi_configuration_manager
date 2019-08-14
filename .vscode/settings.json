@@ -1,8 +1,5 @@
 {
-    "python.pythonPath": "C:\\Users\\leonidas.nascimento\\AppData\\Local\\Programs\\Python\\Python36\\python.exe",
-    "python.testing.pytestArgs": [
-        "tests"
-    ],
+    "python.pythonPath": "env\\Scripts\\python.exe",
     "python.testing.unittestEnabled": true,
     "python.testing.nosetestsEnabled": false,
     "python.testing.pytestEnabled": false,
@@ -12,6 +9,12 @@
         "-s",
         "./configuration_manager/tests",
         "-p",
-        "test_*.py"
-    ]
+        "test*.py"
+    ],
+    "python.linting.pylintEnabled": true,
+    //"python.linting.pylintPath": "configuration_manager\\env\\Scripts\\pylint.exe",
+    "python.linting.enabled": true,
+    "python.linting.pep8Enabled": false,
+    "python.formatting.provider": "black",
+    "python.linting.flake8Enabled": false
 }

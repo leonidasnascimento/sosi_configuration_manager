@@ -1,1 +1,1 @@
-name = "sosi_configuration_manager"
+name = "sosi"
