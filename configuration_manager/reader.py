@@ -1,4 +1,4 @@
-from base_classes import base_config_manager
+from configuration_manager.base_classes import base_config_manager
 
 class reader(base_config_manager.base_config_manager):
     # Class initializer

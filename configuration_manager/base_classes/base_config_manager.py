@@ -1,4 +1,4 @@
-from domain.config import config 
+from configuration_manager.domain.config import config 
 from abc import ABC
 import json
 
