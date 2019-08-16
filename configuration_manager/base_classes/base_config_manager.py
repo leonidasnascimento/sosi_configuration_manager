@@ -1,24 +1,21 @@
-from configuration_manager.domain.config import config 
-from abc import ABC
 import json
+from abc import ABC
+from configuration_manager.domain.config import config
 
 class base_config_manager(ABC):
     configuration: config = None
 
-    def __init__(self, path, jsonPathToRead):
-        if(self.configuration is None):
-            self.configuration = config(path)
-            
-            val = json.loads(open(self.configuration.FullPath).read())
-            valAux = {}
+    def __init__(self, path, node):
+        self.configuration = config(path)
+    
+        val = json.loads(open(self.configuration.full_path).read())
+        val_aux = {}
 
-            if str(jsonPathToRead).__len__() > 0:
-                valAux = val[jsonPathToRead]
-            else:
-                valAux = val
+        if str(node).__len__() > 0:
+            val_aux = val[node]
+        else:
+            val_aux = val
 
-            if valAux is not None:
-                for k, v in valAux.items():
-                    self.configuration.addValue(k, v)                
-        pass  
-    pass
+        if val_aux is not None:
+            for key, value in val_aux.items():
+                self.configuration.add_value(key, value)

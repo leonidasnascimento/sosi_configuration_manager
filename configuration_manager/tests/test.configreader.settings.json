@@ -1,6 +1,6 @@
 {
-  "TestNode": "",
-  "RealValue": {
-    "WEBSITE_SITE_NAME": "sosi-ms001-stockmktlisting"
+  "none_node": "",
+  "real_value": {
+    "web_site_name": "sosi-ms001-stockmktlisting"
   }
 }

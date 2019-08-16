@@ -1,26 +1,19 @@
 class config(object):
-    FullPath: str = None
-    Values: {} = None
+    full_path: str = None
+    values: {} = None
 
     # Class initializer
     def __init__(self, path: ""):
-        self.FullPath = path
-        self.Values = {}
-        pass
+        self.full_path = path
+        self.values = {}
 
-    def addValue(self, key, value):
-        self.Values[key] = value
-        pass
+    def add_value(self, key, value):
+        self.values[key] = value
 
-    def removeValue(self, key, value):
-        self.Values.pop(key, value)
-        pass
+    def remove_value(self, key, value):
+        self.values.pop(key, value)
 
-    def getValue(self, key):
-        if len(self.Values) > 0:
-            return self.Values.get(key, None)
-            pass
+    def get_value(self, key):
+        if self.values:
+            return self.values.get(key, None)
         return None
-        pass
-
-    pass

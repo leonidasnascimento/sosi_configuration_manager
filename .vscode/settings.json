@@ -1,11 +1,5 @@
 {
     "python.pythonPath": "env\\Scripts\\python.exe",
-    "python.autoComplete.extraPaths": [
-        "configuration_manager",
-        "configuration_manager\\base_classes",
-        "configuration_manager\\domain",
-        "configuration_manager\\tests"
-    ],
     "python.testing.unittestEnabled": true,
     "python.testing.nosetestsEnabled": false,
     "python.testing.pytestEnabled": false,
@@ -13,9 +7,9 @@
     "python.testing.unittestArgs": [
         "-v",
         "-s",
-        "./configuration_manager",
+        "./configuration_manager/tests",
         "-p",
-        "test*.py"
+        "test_*.py"
     ],
     "python.linting.pylintEnabled": true,
     "python.linting.enabled": true,
