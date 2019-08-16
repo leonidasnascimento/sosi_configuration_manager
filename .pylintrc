@@ -64,7 +64,8 @@ disable=trailing-whitespace,
         missing-final-newline,
         too-few-public-methods,
         useless-super-delegation,
-        missing-docstring
+        missing-docstring,
+        invalid-name
 
 # Enable the message, report, category or checker with the given id(s). You can
 # either give multiple identifier separated by comma (,) or put this option

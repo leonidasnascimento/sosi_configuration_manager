@@ -1,4 +1,4 @@
-class config(object):
+class config():
     full_path: str = None
     values: {} = None
 
